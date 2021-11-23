@@ -1,25 +1,32 @@
-## The Golden Rule: 
+# Deliverable 08 - Supabase Todo App
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
+[Buggy Supabase Todo App](https://github.com/alchemycodelab/buggy-js-todo-supabase)
 
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+### Live Example:
+https://alchemycodelab.github.io/js-todo-supabase/
 
-## Making a plan
+![](./assets/todos.png)
 
-1) **Make a drawing of your app. Simple "wireframes"**
-1) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
-1) **For each HTML element ask: Why do I need this?** 
-1) **Once we know _why_ we need each element, think about how to implement the "Why" as a "How"**
-1) **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change?**
-1) **Think about how to validate each of your features according to a Definition of Done**
-1) **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+| User should be able to . . .                                                         |             |
+| :----------------------------------------------------------------------------------- | ----------: |
+| Visit the deployed pages on GitHub pages, with link in the About section of the Github repo |    1 |
+| See completed todos styled differently from incomplete todos                                   |        1 |
 
-Additional considerations:
-- Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
-- Consider your data model. 
-  - What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need? 
-  - What are the key/value pairs? 
-  - What arrays might you need? 
-  - What needs to live in a persistence layer?
-- Is there some state we need to initialize?
-- Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+| Events                                                                                |             |
+| :----------------------------------------------------------------------------------- | ----------: |
+| On the home page (`'/'`), Login and Signup using the login and signup form. On success, redirect to the `/todos` page   |        1 |
+| Logout by clicking the logout button                                                       |        1 |
+| If a non-logged-in user tries to visit the todos page, redirect them to the login page     |       1 |
+| On the todos page load, fetch the todos from supabase and render them to the page         |        1 |
+| Add a todo to supabase by using the input and button.                                     |        1 |
+| When a todo is added, clear out the todo list and render the updated list of todos        |        1 |
+| When a user clicks a todo, it becomes complete. Update this state in supabase, clear out the todo list, and re-fetch the updated todos.        |        1 |
+| When a user clicks delete all todos, all todos. Update this state in supabase, clear out the todo list, and re-fetch the updated todos.        |        1 |
+
+
+| Functions                                                                                |             |
+| :----------------------------------------------------------------------------------- | ----------: |
+| ASYNC: `createTodo(todo)` : create a todo in supabase for the logged-in user |1|
+| ASYNC: `deleteAllTodos(todo)` : delete all todos  in supabasefor the logged-in user |1|
+| ASYNC: `getTodos()` : get all todos in supabase for the logged-in user |1|
+| ASYNC: `completeTodo(id)` : complete this todos in supabase for the logged-in user |1|
