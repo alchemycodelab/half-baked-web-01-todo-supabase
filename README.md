@@ -1,4 +1,4 @@
-# Deliverable 08 - Supabase Todo App
+# Supabase Todo App
 
 [Buggy Supabase Todo App](https://github.com/alchemycodelab/buggy-js-todo-supabase)
 
