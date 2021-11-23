@@ -2,6 +2,10 @@
 
 [Buggy Supabase Todo App](https://github.com/alchemycodelab/buggy-js-todo-supabase)
 
+## Learning Objectives
+- Use a truthy/falsey expression in a ternary statement to assign a const  conditionally
+- In response to a user event, delete an item in an array and display the new state to the user
+
 ### Live Example:
 https://alchemycodelab.github.io/js-todo-supabase/
 
