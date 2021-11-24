@@ -9,7 +9,7 @@
 ### Live Example:
 https://alchemycodelab.github.io/js-todo-supabase/
 
-![](https://github.com/alchemycodelab/half-baked-js-todo-supabase/blob/main/assets/todos.png)
+![](https://raw.githubusercontent.com/alchemycodelab/half-baked-js-todo-supabase/main/assets/todos.png)
 
 
 | User should be able to . . .                                                         |             |
