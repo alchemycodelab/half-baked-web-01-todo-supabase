@@ -9,8 +9,6 @@
 ### Live Example:
 https://alchemycodelab.github.io/js-todo-supabase/
 
-<img src="https://raw.githubusercontent.com/alchemycodelab/half-baked-js-todo-supabase/main/assets/todos.png" width="1000" height="560" />
-
 
 | User should be able to . . .                                                         |             |
 | :----------------------------------------------------------------------------------- | ----------: |
