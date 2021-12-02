@@ -7,7 +7,7 @@
 [Buggy Supabase Todo App](https://github.com/alchemycodelab/buggy-js-todo-supabase)
 
 ### Live Example:
-https://alchemycodelab.github.io/js-todo-supabase/
+https://alchemycodelab.github.io/web-01-todo-supabase/
 
 
 | User should be able to . . .                                                         |             |
