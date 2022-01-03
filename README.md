@@ -6,7 +6,7 @@
 
 [Buggy Supabase Todo App](https://github.com/alchemycodelab/buggy-js-todo-supabase)
 
-Here is the model for the `todos` table:
+Here is the schema for the `todos` table:
 
 ![](./todos-model.png)
 ### Live Example:
