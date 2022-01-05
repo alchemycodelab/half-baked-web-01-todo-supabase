@@ -12,6 +12,7 @@ export async function createTodo(todo){
 export async function deleteAllTodos() {
     // delete all todos for this user in supabase
 
+    return checkError(response);
 }
 
 export async function getTodos() {
@@ -60,7 +61,7 @@ export async function signInUser(email, password){
 export async function logout() {
     await client.auth.signOut();
 
-    return window.location.href = '/';
+    return window.location.href = '../';
 }
 
 function checkError({ data, error }) {
