@@ -4,22 +4,14 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsI
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function createTodo(todo){
-    const newTodo = { 
-        todo: todo,
-        complete: false, 
-        user_id: client.auth.user().id, 
-    };
-
-    // using the above object, create a single incomplete todo for this user in supabase
+    // create a single incomplete todo with the correct 'todo' property for this user in supabase
 
     return checkError(response);
 }
 
 export async function deleteAllTodos() {
-    await client
-        .from('todos')
-        .delete()
-        .match({ user_id: client.auth.user().id, });
+    // delete all todos for this user in supabase
+
 }
 
 export async function getTodos() {
@@ -29,12 +21,7 @@ export async function getTodos() {
 }
 
 export async function completeTodo(id) {
-    const match = { 
-        user_id: client.auth.user().id, 
-        id: id,
-    };
-
-    // find the and update (set complete to true), the todo that matches the correct id and user_id (we don't want to touch other users' todos)
+    // find the and update (set complete to true), the todo that matches the correct id
 
     return checkError(response);    
 }
