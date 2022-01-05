@@ -23,11 +23,11 @@ https://alchemycodelab.github.io/web-01-todo-supabase/
 | On the home page (`'/'`), Login and Signup using the login and signup form. On success, redirect to the `/todos` page   |        .5 |
 | Logout by clicking the logout button                                                       |       .5 |
 | If a non-logged-in user tries to visit the todos page, redirect them to the login page     |       .5 |
-| On the todos page load, fetch the todos from supabase and render them to the page. Call your displayTodos() function to do this work.        |        1 |
+| On the todos page load, fetch the todos from supabase and render them to the page. Call your `displayTodos()` function to do this work.        |        1 |
 | Add a todo to supabase by using the input and button.                                     |        1 |
 | When a todo is added, clear out the todo list and render the updated list of todos.       |        1 |
-| When a user clicks a todo, it becomes complete. Update this state in supabase, clear out the todo list, and re-fetch and redisplay the updated todos. Call your displayTodos() function to do this work.                |        1 |
-| When a user clicks delete all todos, all todos. Update this state in supabase, clear out the todo list, and re-fetch and redisplay the updated todos. Call your displayTodos() function to do this work.               |        .5 |
+| When a user clicks a todo, it becomes complete. Update this state in supabase, clear out the todo list, and re-fetch and redisplay the updated todos. Call your `displayTodos()` function to do this work.                |        1 |
+| When a user clicks delete all todos, all todos. Update this state in supabase, clear out the todo list, and re-fetch and redisplay the updated todos. Call your `displayTodos()` function to do this work.               |        .5 |
 
 
 | Functions                                                                                |             |
