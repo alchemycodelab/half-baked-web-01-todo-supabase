@@ -33,6 +33,6 @@ https://alchemycodelab.github.io/web-01-todo-supabase/
 | Functions                                                                                |             |
 | :----------------------------------------------------------------------------------- | ----------: |
 | ASYNC: `createTodo(todo)` : create a todo in supabase for the logged-in user |1|
-| ASYNC: `deleteAllTodos(todo)` : delete all todos  in supabasefor the logged-in user |.5|
+| ASYNC: `deleteAllTodos()` : delete all todos  in supabasefor the logged-in user |.5|
 | ASYNC: `getTodos()` : get all todos in supabase for the logged-in user |.5|
 | ASYNC: `completeTodo(id)` : complete this todos in supabase for the logged-in user |1|
