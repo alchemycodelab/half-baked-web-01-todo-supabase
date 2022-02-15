@@ -1,9 +1,10 @@
 const SUPABASE_URL = 'https://gxwgjhfyrlwiqakdeamc.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNjQxMTMxMiwiZXhwIjoxOTUxOTg3MzEyfQ.PHekiwfLxT73qQsLklp0QFEfNx9NlmkssJFDnlvNIcA';
+const SUPABASE_KEY =
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNjQxMTMxMiwiZXhwIjoxOTUxOTg3MzEyfQ.PHekiwfLxT73qQsLklp0QFEfNx9NlmkssJFDnlvNIcA';
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-export async function createTodo(todo){
+export async function createTodo(todo) {
     // create a single incomplete todo with the correct 'todo' property for this user in supabase
 
     return checkError(response);
@@ -18,26 +19,23 @@ export async function deleteAllTodos() {
 export async function getTodos() {
     // get all todos for this user from supabase
 
-    return checkError(response);    
+    return checkError(response);
 }
 
 export async function completeTodo(id) {
     // find the and update (set complete to true), the todo that matches the correct id
 
-    return checkError(response);    
+    return checkError(response);
 }
-
-
 
 export async function getUser() {
     return client.auth.session();
 }
 
-
 export async function checkAuth() {
     const user = await getUser();
 
-    if (!user) location.replace('../'); 
+    if (!user) location.replace('../');
 }
 
 export async function redirectIfLoggedIn() {
@@ -46,13 +44,13 @@ export async function redirectIfLoggedIn() {
     }
 }
 
-export async function signupUser(email, password){
+export async function signupUser(email, password) {
     const response = await client.auth.signUp({ email, password });
-    
+
     return response.user;
 }
 
-export async function signInUser(email, password){
+export async function signInUser(email, password) {
     const response = await client.auth.signIn({ email, password });
 
     return response.user;
@@ -61,7 +59,7 @@ export async function signInUser(email, password){
 export async function logout() {
     await client.auth.signOut();
 
-    return window.location.href = '../';
+    return (window.location.href = '../');
 }
 
 function checkError({ data, error }) {
