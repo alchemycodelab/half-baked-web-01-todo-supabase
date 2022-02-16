@@ -10,7 +10,6 @@ Use [this template](https://github.com/alchemycodelab/half-baked-web-01-todo-sup
 
 ## Learning Objectives
 
--   In response to a user event, delete an item in an array and display the new state to the user
 -   Perform CRUD actions on user data in supabase
 
 ## Description
