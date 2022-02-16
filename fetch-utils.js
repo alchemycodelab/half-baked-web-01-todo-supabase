@@ -28,23 +28,23 @@ export async function completeTodo(id) {
     return checkError(response);
 }
 
-export async function getUser() {
-    return client.auth.session();
+export function getUser() {
+    return client.auth.session() && client.auth.session().user;
 }
 
-export async function checkAuth() {
-    const user = await getUser();
+export function checkAuth() {
+    const user = getUser();
 
     if (!user) location.replace('../');
 }
 
-export async function redirectIfLoggedIn() {
+export function redirectIfLoggedIn() {
     if (await getUser()) {
         location.replace('./todos');
     }
 }
 
-export async function signupUser(email, password) {
+export function signupUser(email, password) {
     const response = await client.auth.signUp({ email, password });
 
     return response.user;
