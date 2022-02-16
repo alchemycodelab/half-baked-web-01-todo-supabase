@@ -6,7 +6,7 @@ https://alchemycodelab.github.io/web-01-todo-supabase/
 
 ## Getting Started
 
-Use [this template](https://github.com/alchemycodelab/web-template-supabase) to get started.
+Use [this template](https://github.com/alchemycodelab/half-baked-web-01-todo-supabase) to get started.
 
 ## Learning Objectives
 
