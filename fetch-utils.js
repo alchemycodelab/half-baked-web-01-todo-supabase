@@ -39,12 +39,13 @@ export function checkAuth() {
 }
 
 export function redirectIfLoggedIn() {
-    if (await getUser()) {
+    const user = getUser();
+    if (user) {
         location.replace('./todos');
     }
 }
 
-export function signupUser(email, password) {
+export async function signupUser(email, password) {
     const response = await client.auth.signUp({ email, password });
 
     return response.user;
