@@ -19,15 +19,25 @@ todoForm.addEventListener('submit', async(e) => {
     // on submit, create a todo, reset the form, and display the todos
 });
 
+// create todo state
+
 // add async complete todo handler function
+    // call completeTodo
+    // swap out todo in array
+    // call displayTodos
+
+   
 
 async function displayTodos() {
-    // fetch the todos
-    
-    // display the list of todos, pass in your handler function!
+    // clear the container (.innerHTML = '')
+    // display the list of todos, 
+          // call render function, pass in state and complete handler function!
+          // append to .todos
 }
 
-// add an on load listener that fetches and displays todos on load
+// add page load function
+    // fetch the todos and store in state
+    // call displayTodos
 
 logoutButton.addEventListener('click', () => {
     logout();
@@ -36,6 +46,6 @@ logoutButton.addEventListener('click', () => {
 
 deleteButton.addEventListener('click', async() => {
     // delete all todos
-
-    // then refetch and display the updated list of todos
+    // modify state to match
+    // re displayTodos
 });
