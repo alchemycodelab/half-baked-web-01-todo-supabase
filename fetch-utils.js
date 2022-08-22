@@ -60,7 +60,7 @@ export async function signInUser(email, password) {
 export async function logout() {
     await client.auth.signOut();
 
-    return (window.location.href = '../');
+    window.location.replace('../');
 }
 
 function checkError({ data, error }) {
