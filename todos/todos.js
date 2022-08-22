@@ -19,14 +19,12 @@ todoForm.addEventListener('submit', async(e) => {
     // on submit, create a todo, reset the form, and display the todos
 });
 
+// add async complete todo handler function
+
 async function displayTodos() {
     // fetch the todos
     
-    // display the list of todos
-
-    // be sure to give each todo an event listener
-
-    // on click, complete that todo
+    // display the list of todos, pass in your handler function!
 }
 
 // add an on load listener that fetches and displays todos on load
