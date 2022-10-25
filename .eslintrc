@@ -69,6 +69,7 @@
                 "after": true
             }
         ],
-        "array-bracket-spacing": "error"
+        "array-bracket-spacing": "error",
+        "no-unused-vars": "off"
     }
 }
