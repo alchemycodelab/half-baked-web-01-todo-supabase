@@ -22,17 +22,24 @@ You will be creating a to do list using Supabase. Users should only be able to p
 
 ## Acceptance Criteria
 
--   Users should be able to add a to do item to their list
--   Users should be able to "complete" items on their to do list
--   Users should be able to delete all of their todos
+-   Users should be able to add a to do item to their list (CREATE)
+-   Users should be able to view all of their todos (READ)
+-   Users should be able to "complete" items on their to do list (UPDATE)
+-   Users should be able to delete all of their todos (DELETE)
 
-| Task                                                  | Points |
-| ----------------------------------------------------- | ------ |
-| **Deploy Requirements**                               |        |
-| Main branch deployed to Netlify                       | 0      |
-| Open PR from `dev` branch with Netlify deploy preview | 0      |
-| **Code Requirments**                                  |        |
-| Users see a list of all their todos                   | 2.5    |
-| Users can add todos to the database                   | 2.5    |
-| Users can complete todos                              | 2.5    |
-| Users can delete all todos                            | 2.5    |
+## Rubric
+
+The following is required for your assignment to be graded:
+
+-   PR open from `dev` to `main`
+-   PR Passes CI (lint + tests)
+-   PR preview on netlify
+-   At least 4 commits, for each working feature
+
+| Task                                | Points |
+| ----------------------------------- | ------ |
+| **Code Requirments**                |        |
+| Users see a list of all their todos | 2.5    |
+| Users can add todos to the database | 2.5    |
+| Users can complete todos            | 2.5    |
+| Users can delete all todos          | 2.5    |
