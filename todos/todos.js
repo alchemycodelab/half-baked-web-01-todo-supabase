@@ -15,27 +15,27 @@ const todoForm = document.querySelector('.todo-form');
 const logoutButton = document.querySelector('#logout');
 const deleteButton = document.querySelector('.delete-button');
 
+// let some todo state (an array)
+
 todoForm.addEventListener('submit', async (e) => {
-    // on submit, create a todo, reset the form, and display the todos
+    // on submit, 
+    // create a todo in supabase using for data
+    // reset the form DOM element
+    // and display the todos
 });
 
-// create todo state
-
-// add async complete todo handler function
-async function handleComplete() {
-    // call completeTodo
-    // swap out todo in array
-    // call displayTodos
-}
-
 async function displayTodos() {
-    // clear the container (.innerHTML = '')
-    // display the list of todos,
-    // call render function, pass in state and complete handler function!
-    // append to .todos
+    // clear the container (.textContent = '')
+    // fetch the user's todos from supabase
+
+    // loop through the user's todos
+        // for each todo, render a new todo DOM element using your render function
+        // then add an event listener to each todo
+            // on click, update the todo in supabase
+            // then (shockingly!) call displayTodos() to refresh the list
+        // append the rendered todo DOM element to the todosEl
 }
 
-// add page load function
 window.addEventListener('load', async () => {
     // fetch the todos and store in state
     // call displayTodos
@@ -47,6 +47,5 @@ logoutButton.addEventListener('click', () => {
 
 deleteButton.addEventListener('click', async () => {
     // delete all todos
-    // modify state to match
-    // re displayTodos
+    // then refetch and display the updated list of todos
 });
