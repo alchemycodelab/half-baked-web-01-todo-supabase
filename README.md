@@ -40,6 +40,6 @@ The following is required for your assignment to be graded:
 | ----------------------------------- | ------ |
 | **Code Requirments**                |        |
 | Users see a list of all their todos | 2.5    |
-| Users can add todos to the database | 2.5    |
+| Users can add todos                 | 2.5    |
 | Users can complete todos            | 2.5    |
 | Users can delete all todos          | 2.5    |
